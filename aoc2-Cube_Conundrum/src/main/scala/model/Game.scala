@@ -9,4 +9,6 @@ case class Game(id: Int, cubeQuantities: Map[Cube, Int]) {
     }
   }
 
+  def getPower: Int = cubeQuantities.values.product
+
 }
